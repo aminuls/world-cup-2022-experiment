@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/419928b3b9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>World-Cup|2022</title>
+    <style>
+        @media only screen and (max-width:850px){
+            .tab-display{
+                display: none;
+            }
+            .view-more{
+                display: block;
+                grid-column: 1/-1;
+                position: relative;
+                top: 20px;
+            }
+            .full-page{
+                grid-template: 60vh auto auto / auto;
+            }
+            .top-banner{
+                height: 100%;
+                width: 100%;
+                gap: 0;
+                margin: 0px;
+            }
+            .top-banner-text{
+                margin-left: 5%;
+                color: #ffffff;
+                font-size: 1em;
+                line-height: 26px;
+                font-weight: 300;
+                flex: 1 1 40%;
+            }
+            .top-banner-title{
+                font-size: 50px;
+                line-height: 60px;
+            }
+            .top-banner-img{
+                flex: 1 1 55%;
+            }
+            .top-banner-img img{
+                left: 850px;
+                transform: scale(.9);
+                animation: player 10s steps(1,end) 0s infinite;
+            }
+            @keyframes player {
+                0%{
+                    left: 800px;
+                }
+                25%{
+                    left: 220px
+                }
+                50%{
+                    left: -420px
+                }
+                75%{
+                    left: -1050px
+                }
+                100%{
+                    left: 850px
+                }
+            }
+            .section-blog{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(auto, 1fr);
+                grid-gap: 25px;
+                margin: 100px 2%;
+            }
+            .section-nav{
+                grid-column: 1/-1;
+                grid-row: 1/2;
+            }
+            .section-nav-link{
+                display: flex;
+                flex: 1 1 100%;
+                flex-direction: row;
+                justify-content: center;
+                align-items: flex-start;
+                margin: 10px 0px;
+            }
+            footer{
+                width: 100%;
+            }
+            footer ul{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                row-gap: 25px;
+                width: 90%;
+            }
+        }
+        @media screen and (max-width: 576px){
+            .tab-display{
+                display: block;
+            }
+            .view-more{
+                display: none;
+            }
+            .full-page{
+                grid-template: 100vh auto auto / auto;
+            }
+            .top-banner{
+                flex-direction: column-reverse;
+                justify-content: center;
+                align-items: center;
+                border-radius: 0px 0px 25px 25px;
+                margin: 0px;
+            }
+            .top-banner-text{
+                text-align: center;
+                margin: 0px 2%;
+            }
+            .top-banner-title{
+                font-size: 40px;
+                line-height: 50px;
+                text-align: center;
+            }
+            .top-banner-img img{
+                margin-left: 100px;
+                left: 680px;
+                transform: scale(.7);
+                animation: player 10s steps(1,end) 0s infinite;
+            }
+            @keyframes player {
+                0%{
+                    left: 680px;
+                }
+                25%{
+                    left: 220px
+                }
+                50%{
+                    left: -300px
+                }
+                75%{
+                    left: -770px
+                }
+                100%{
+                    left: 680px
+                }
+            }
+            .section-blog{
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(auto, 1fr);
+                grid-gap: 25px 0px;
+                margin: 100px 1%;
+            }
+            .section-nav-link{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            footer ul{
+                flex-direction: column;
+                text-align: center;
+            }
+            #social{
+                width: 100%;
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="full-page">
+        <section class="top-banner">
+            <div class="top-banner-text">
+                <h1 class="top-banner-title">The Greatest show on the earth</h1>
+                <p>Football is like life. It requires perseverance, self-denial, hard work, sacrifice, dedication, and respect for authority. – Vince Lombardi
+                </p>
+                <a href="#">Watch Live <i class="fa-solid fa-circle-arrow-right"></i></a>
+            </div>
+            <div class="top-banner-img">
+                <img src="./assets/image (1).png" alt="banner">
+                <img src="./assets/image (2).png" alt="banner">
+                <img src="./assets/image (4).png" alt="banner">
+                <img src="./assets/image (3).png" alt="banner">
+            </div>
+        </section>
+        <section class="section-blog">
+            <nav class="section-nav">
+                <div class="section-nav-link">
+                    <a href="#">Upcoming Match</a>
+                    <a href="#">All Group</a>
+                    <a href="./blog.html">Blog</a>
+                </div>
+            </nav>
+            <article>
+                <div class="blog-img"><img src="./assets/Blog Image.png" alt="blog-image"></div>
+                <article class="blog-text">
+                    <button class="button">Transfer</button>
+                    <h2>Man Utd boss Erik ten Hag told he already has Frenkie de Jong alternative</h2>
+                    <article class="blog-icon">
+                        <span><i class="fa-regular fa-clock"></i> 10h</span>
+                        <span><i class="fa-regular fa-message"></i> 23</span>
+                    </article>
+                </article>
+            </article>
+            <article>
+                <div class="blog-img"><img src="./assets/Blog Image.png" alt="blog-image"></div>
+                <article class="blog-text">
+                    <button class="button">Transfer</button>
+                    <h2>Arsenal set to bid for Arthur Melo - why he could join this summer</h2>
+                    <article class="blog-icon">
+                        <span><i class="fa-regular fa-clock"></i> 10h</span>
+                        <span><i class="fa-regular fa-message"></i> 23</span>
+                    </article>
+                </article>
+            </article>
+            <article>
+                <div class="blog-img"><img src="./assets/Blog Image.png" alt="blog-image"></div>
+                <article class="blog-text">
+                    <button class="button">Transfer</button>
+                    <h2>Kounde and Suarez transfers would make Chelsea complete</h2>
+                    <article class="blog-icon">
+                        <span><i class="fa-regular fa-clock"></i> 10h</span>
+                        <span><i class="fa-regular fa-message"></i> 23</span>
+                    </article>
+                </article>
+            </article>
+            <article>
+                <div class="blog-img"><img src="./assets/Blog Image.png" alt="blog-image"></div>
+                <article class="blog-text">
+                    <button class="button">Transfer</button>
+                    <h2>Lukaku gone, Broja next? How Tuchel could reshape Chelsea's attack</h2>
+                    <article class="blog-icon">
+                        <span><i class="fa-regular fa-clock"></i> 10h</span>
+                        <span><i class="fa-regular fa-message"></i> 23</span>
+                    </article>
+                </article>
+            </article>
+            <article>
+                <div class="blog-img"><img src="./assets/Blog Image.png" alt="blog-image"></div>
+                <article class="blog-text">
+                    <button class="button">Transfer</button>
+                    <h2>Man Utd boss Erik ten Hag told he already has Frenkie de Jong alternative</h2>
+                    <article class="blog-icon">
+                        <span><i class="fa-regular fa-clock"></i> 10h</span>
+                        <span><i class="fa-regular fa-message"></i> 23</span>
+                    </article>
+                </article>
+            </article>
+            <article>
+                <div class="blog-img"><img src="./assets/Blog Image.png" alt="blog-image"></div>
+                <article class="blog-text">
+                    <button class="button">Transfer</button>
+                    <h2>Arsenal set to bid for Arthur Melo - why he could join this summer</h2>
+                    <article class="blog-icon">
+                        <span><i class="fa-regular fa-clock"></i> 10h</span>
+                        <span><i class="fa-regular fa-message"></i> 23</span>
+                    </article>
+                </article>
+            </article>
+            <article class="tab-display">
+                <div class="blog-img"><img src="./assets/Blog Image.png" alt="blog-image"></div>
+                <article class="blog-text">
+                    <button class="button">Transfer</button>
+                    <h2>PSG close in on Mukiele – here’s what it means for Man Utd dream Hakimi</h2>
+                    <article class="blog-icon">
+                        <span><i class="fa-regular fa-clock"></i> 10h</span>
+                        <span><i class="fa-regular fa-message"></i> 23</span>
+                    </article>
+                </article>
+            </article>
+            <article class="tab-display">
+                <div class="blog-img"><img src="./assets/Blog Image.png" alt="blog-image"></div>
+                <article class="blog-text">
+                    <button class="button">Transfer</button>
+                    <h2>Chelsea close on Gvardiol deal, Arsenal close on Zinchenko</h2>
+                    <article class="blog-icon">
+                        <span><i class="fa-regular fa-clock"></i> 10h</span>
+                        <span><i class="fa-regular fa-message"></i> 23</span>
+                    </article>
+                </article>
+            </article>
+            <article class="tab-display">
+                <div class="blog-img"><img src="./assets/Blog Image.png" alt="blog-image"></div>
+                <article class="blog-text">
+                    <button class="button">Transfer</button>
+                    <h2>Kounde and Suarez transfers would make Chelsea complete</h2>
+                    <article class="blog-icon">
+                        <span><i class="fa-regular fa-clock"></i> 10h</span>
+                        <span><i class="fa-regular fa-message"></i> 23</span>
+                    </article>
+                </article>
+            </article>
+            <div class="top-banner-text view-more">
+                <a href="#">View All <i class="fa-solid fa-circle-chevron-right"></i></a>
+            </div>
+        </section>
+        <footer>
+            <h1>Goal</h1>
+            <span></span>
+            <ul>
+                <li>Contact Us</li>
+                <li>Terms of Service</li>
+                <li>Privacy</li>
+                <li>Policy</li>
+                <li>Privacy Settings</li>
+                <li>Goal App</li>
+                <li>Goal Live</li>
+            </ul>
+            <ul id="social">
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-google-plus-g"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+            </ul>
+        </footer>
+    </main>
+</body>
+</html>
